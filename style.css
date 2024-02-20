@@ -1,0 +1,468 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.bg{
+    background-image: url(/asset/portfolio.jpg);
+    width: 100%;
+    position: absolute;
+    background-blend-mode: overlay;
+    object-fit: cover;
+    background-color: rgb(17 24 39 / 0.9);
+    height: 100%;
+    background-size: cover;
+}
+
+nav{
+    background-color: #fff;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    position: fixed;
+}
+
+.logo{
+    color: rgb(17 24 39 / 0.9);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+} 
+
+nav ul li a{
+    color: rgb(17 24 39 / 0.9);
+    font-size: 17px;
+    padding: 17px 13px;
+    font-weight: bold;
+}
+
+
+
+
+
+ .hightlight {
+     background: #72a7dd;
+     display: inline-block;
+     width: 20px;
+ }
+
+
+.Text{
+    color: #72a7dd;
+    font-size: 25px;
+}
+
+
+
+
+.text{
+color: #FFF;
+padding-left: 10rem;
+font-size: 23px;
+
+}
+
+.text {
+    overflow: hidden;
+    /* Hide overflowing text */
+}
+
+.text span {
+    display: inline-block;
+    /* Make spans behave as blocks */
+}
+
+/* Keyframe animation */
+@keyframes slideRight {
+    0% {
+        transform: translateY(80%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Apply animation to the spans */
+.text {
+    animation: slideRight 2s  forwards;
+    
+    opacity: 0;
+    /* Adjust duration as needed */
+}
+
+
+
+.caption{
+    padding-top: 8rem;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 10rem;
+    padding-bottom: 1rem; 
+    
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: rgb(17 24 39 / 0.9);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.phone-s{
+    display: none;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.build{
+padding: 14px;
+    background-color: #72a7dd;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 10rem;
+    text-align: center;
+    margin-left: 10rem;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+    box-shadow: 0 0 5px #72a7dd , 0 0 25px #72a7dd;
+}
+
+.build a{
+  text-decoration: none;
+  color: #fff;  
+}
+
+
+
+
+
+
+
+.container{
+    display: grid;
+     grid-template-columns: repeat(3, 100px) 150px;
+     grid-gap: 7rem;
+    
+}
+
+.skills{
+    font-size: 19px;
+    color: #fff;
+}
+
+.word{
+    color: #fff;
+}
+
+
+.hero{
+    display: flex;
+    justify-content: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 1rem;
+    gap: 1rem;
+}
+
+
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1150px;
+    margin: 150px auto;
+    margin-top: 20px;
+    padding: 20px;
+    gap: 20px;
+    margin-bottom: 0;
+}
+
+.card-item {
+    background-color: #fff;
+    padding: 26px;
+    border-radius: 8px;
+    box-shadow: 6px 5px 10px rgba(17 24  39 / 0.9);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: border 0.5s ease;
+}
+
+.card-item:hover {
+    border: 2px solid indigo;
+}
+
+.card-item img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.card-item .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-35deg);
+    height: 40px;
+    width: 40px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-top: 40px;
+    transition: 0.2s ease;
+}
+
+.card-item:hover .arrow {
+    background-color: #000;
+    color: #fff;
+}
+
+.card-list span {
+    display: inline-block;
+    background: #f7dff5;
+    margin-top: 32px;
+    padding: 8px 15px;
+    font-size: 0.75rem;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.card-list .developer {
+    background-color: #f7dff5;
+    color: #b22485;
+    width: 43%;
+    font-size: 15px;
+}
+
+.card-list .designer {
+    background-color: #d1e8ff;
+    width: 30%;
+    font-size: 15px;
+}
+
+.card-list .editor {
+    background: #f7dff5;
+    color: #205c20;
+    width: 48%;
+    font-size: 15px;
+}
+
+.card-item h2{
+    color: indigo;
+    margin: 0;
+}
+
+
+.account {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 2rem;
+    color: rgba(17 24 39 / 0.9);
+}
+
+.account a{
+    color: rgba(17 24 39 / 0.9);
+}
+.line{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: rgba(17 24 39 / 0.9);
+    width: 100%;
+}
+
+.last{
+    text-align: center;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 952px) {
+
+    .logo {
+            font-size: 30px;
+            padding-left: 50px;
+        }
+    
+        nav ul li a {
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+    .text {
+        padding-left: 1rem;
+        font-size: 20px;
+    }
+
+    .caption {
+        padding-left: 1rem;
+    }
+
+    .build {
+        margin-left: 1rem;
+    }
+
+    .container {
+        display: inline-block;
+    }
+
+    .things-btn {
+        margin-left: 1rem;
+        margin-top: 1rem;
+        height: 22vh;
+    }
+
+    .things-b {
+        margin-left: 1rem;
+        margin-top: 1rem;
+        height: 22vh;
+
+    }
+
+         .card-list {
+             gap: 4rem;
+         }
+
+                 .part {
+                     font-size: 25px;
+                 }
+        
+                 .part_b {
+                     font-size: 18px;
+                 }
+
+}
+
+
+@media (max-width: 858px){
+
+
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 70vh;
+        background: #fff;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+        nav ul li a{
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        #check:checked ~ ul{
+            left: 0;
+        }
+    
+        .text {
+            padding-left: 1rem;
+            font-size: 20px;
+        }
+    
+        .caption {
+            padding-left: 1rem;
+        }
+    
+        .build {
+            margin-left: 1rem;
+        }
+    
+        .container {
+            display: inline-block;
+        }
+    
+        .things-btn {
+            margin-left: 1rem;
+            margin-top: 1rem;
+            height: 22vh;
+        }
+    
+        .things-b {
+            margin-left: 1rem;
+            margin-top: 1rem;
+            height: 22vh;
+    
+        }
+    
+        .card-list {
+            gap: 4rem;
+        }
+    
+        .part {
+            font-size: 25px;
+        }
+    
+        .part_b {
+            font-size: 18px;
+        }
+
+                .account{
+                    margin-top: 2rem;
+                }
+
+}
+
+
+@media (width: 320px){
+    .logo{
+        font-size: 25px;
+    }
+
+}
+
+
